@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Guichet_automatique_ATM</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="d_connexion">dÉCONNEXION</string>
+    <string name="etats_des_comptes">etats des comptes</string>
+    <string name="_7">7</string>
+    <string name="_0">0</string>
+    <string name="_5">5</string>
+    <string name="pargne">Épargne</string>
+    <string name="ch_que">Chèque</string>
+    <string name="c">c</string>
+    <string name="point">.</string>
+    <string name="_200">200</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="soumettre">soumettre</string>
+    <string name="_6">6</string>
+    <string name="_4">4</string>
+    <string name="d_p_t">Dépôt</string>
+    <string name="retrait">Retrait</string>
+    <string name="virement">Virement</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+</resources>
