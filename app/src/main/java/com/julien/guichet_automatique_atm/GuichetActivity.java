@@ -2,6 +2,7 @@ package com.julien.guichet_automatique_atm;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -12,6 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class GuichetActivity extends AppCompatActivity {
+
+    //Instanciation des boutons
+    Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9
+            , buttonPoint, buttonC, buttonEtatComptes, buttonSoumettre, buttonLogOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,45 +66,71 @@ public class GuichetActivity extends AppCompatActivity {
 
 
     public void onClickBtnDeconnexion(View view) {
+
+        buttonLogOut = findViewById(R.id.buttonDeconnexion);
     }
 
 
     // Méthodes onClick du pavé numérique
 
     public void onClickBtn1(View view) {
+
+        button1 = findViewById(R.id.button);
     }
 
     public void onClickBtn2(View view) {
+
+        button2 = findViewById(R.id.button2);
     }
 
     public void onClickBtn3(View view) {
+
+        button3 = findViewById(R.id.button3);
     }
 
     public void onClickBtn4(View view) {
+
+        button4 = findViewById(R.id.button4);
     }
 
     public void onClickBtn5(View view) {
+
+        button5 = findViewById(R.id.button5);
     }
 
     public void onClickBtn6(View view) {
+
+        button6 = findViewById(R.id.button6);
     }
 
     public void onClickBtn7(View view) {
+
+        button7 = findViewById(R.id.button7);
     }
 
     public void onClickBtn8(View view) {
+
+        button8 = findViewById(R.id.button8);
     }
 
     public void onClickBtn9(View view) {
+
+        button9 = findViewById(R.id.button9);
     }
 
     public void onClickBtn0(View view) {
+
+        button0 = findViewById(R.id.button0);
     }
 
     public void onClickBtnPoint(View view) {
+
+        buttonPoint = findViewById(R.id.buttonPoint);
     }
 
     public void onClickBtnC(View view) {
+
+        buttonC = findViewById(R.id.buttonC);
     }
 
     //Méthodes onClick sur les radioGroup rdgChoixAction et rdgChoixCompte
@@ -116,9 +147,13 @@ public class GuichetActivity extends AppCompatActivity {
     // Méthodes onClick qui permettent de finaliser la transaction et de montrer l'état des comptes.
 
     public void onClickEtat(View view) {
+
+        buttonEtatComptes = findViewById(R.id.buttonEtatCompte);
     }
 
     public void onClickSoumettre(View view) {
+
+        buttonSoumettre = findViewById(R.id.buttonSoumettre);
     }
 
 
