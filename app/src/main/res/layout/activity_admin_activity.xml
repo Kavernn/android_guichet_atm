@@ -31,7 +31,7 @@
         android:layout_below="@id/btnComptesCheques"
         android:layout_centerInParent="true"
         android:backgroundTint="#D6D6D6"
-        android:onClick="onClicBtnComptesEpargnes"
+        android:onClick="onClickBtnComptesEpargnes"
         android:text="Comptes épargnes"
         android:textColor="@color/black" />
 

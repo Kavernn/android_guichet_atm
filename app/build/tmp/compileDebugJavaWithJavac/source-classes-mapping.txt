@@ -4,6 +4,8 @@ com/julien/guichet_automatique_atm/Epargne.java
  com.julien.guichet_automatique_atm.Epargne
 com/julien/guichet_automatique_atm/BuildConfig.java
  com.julien.guichet_automatique_atm.BuildConfig
+com/julien/guichet_automatique_atm/AdminActivity.java
+ com.julien.guichet_automatique_atm.AdminActivity
 com/julien/guichet_automatique_atm/Client.java
  com.julien.guichet_automatique_atm.Client
 com/julien/guichet_automatique_atm/Compte.java

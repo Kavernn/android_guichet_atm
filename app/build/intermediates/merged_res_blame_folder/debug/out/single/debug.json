@@ -32,6 +32,10 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_admin_activity.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_admin_activity.xml"
+    },
+    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },

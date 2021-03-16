@@ -1771,7 +1771,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnComptesCheques
+id btnComptesEpargnes
+id btnListeDesClients
 id btnOK
+id btnPaiementInteret
 id btnQuitter
 id button
 id button10
@@ -2185,6 +2189,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_activity
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
