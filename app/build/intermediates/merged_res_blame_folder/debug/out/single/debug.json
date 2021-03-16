@@ -1,70 +1,70 @@
 [
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/layout_guichet.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/layout/guichet.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/layout-land_guichet.xml.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/layout-land/guichet.xml"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_guichet.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/guichet.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout-land_guichet.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout-land/guichet.xml"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/media/glujovil/Disque_P/AEC-2020-2021/Session3/Android/Projets_Android/Guichet_automatique_ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     }
 ]

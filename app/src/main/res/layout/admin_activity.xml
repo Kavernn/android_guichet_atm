@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPaiementInteret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D6D6D6"
+        android:onClick="onClickBtnPaiementInterets"
+        android:text="Paiement des intérêts"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnComptesCheques"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPaiementInteret"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D6D6D6"
+        android:onClick="onClickBtnComptesCheques"
+        android:text="Comptes chèques"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnComptesEpargnes"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnComptesCheques"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D6D6D6"
+        android:onClick="onClicBtnComptesEpargnes"
+        android:text="Comptes épargnes"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnListeDesClients"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnComptesEpargnes"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D6D6D6"
+        android:onClick="onClickListeClients"
+        android:text="Liste des clients"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
