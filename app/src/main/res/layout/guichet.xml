@@ -251,7 +251,8 @@
                 android:id="@+id/rdbDepot"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="@string/d_p_t" />
+                android:text="@string/d_p_t"
+                android:checked = "true"/>
 
             <RadioButton
                 android:id="@+id/rdbRetrait"
@@ -283,7 +284,8 @@
                 android:id="@+id/radioButton4"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="@string/ch_que" />
+                android:text="@string/ch_que"
+                android:checked = "true"/>
 
             <RadioButton
                 android:id="@+id/radioButton5"
