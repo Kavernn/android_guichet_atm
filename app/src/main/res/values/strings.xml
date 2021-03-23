@@ -24,4 +24,6 @@
     <string name="_9">9</string>
     <string name="nom">Nom: </string>
     <string name="prenom">Prénom: </string>
+    <string name="txtSoldeCompte"> Solde du compte:</string>
+    <string name="txtNumeroComptesCheques">Numéro du compte: </string>
 </resources>
