@@ -4,6 +4,8 @@ package com.julien.guichet_automatique_atm;
  *
  * @author user
  */
+
+//
 abstract public class Compte {
 
     private int numeroNIP;
