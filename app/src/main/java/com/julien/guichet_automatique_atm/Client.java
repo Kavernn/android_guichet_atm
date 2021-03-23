@@ -25,6 +25,4 @@ public class Client {
         return nip;
     }
 
-
-
 }
