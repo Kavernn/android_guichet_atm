@@ -2,6 +2,7 @@ package com.julien.guichet_automatique_atm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,5 +24,8 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     public void onClickListeClients(View view) {
+
+        Intent intent = new Intent (this, ListeClients.class);
+        startActivity(intent);
     }
 }

@@ -1,5 +1,5 @@
-com/julien/guichet_automatique_atm/GuichetActivity.java
- com.julien.guichet_automatique_atm.GuichetActivity
+com/julien/guichet_automatique_atm/Cheque.java
+ com.julien.guichet_automatique_atm.Cheque
 com/julien/guichet_automatique_atm/Epargne.java
  com.julien.guichet_automatique_atm.Epargne
 com/julien/guichet_automatique_atm/BuildConfig.java
@@ -12,7 +12,7 @@ com/julien/guichet_automatique_atm/Compte.java
  com.julien.guichet_automatique_atm.Compte
 com/julien/guichet_automatique_atm/Guichet.java
  com.julien.guichet_automatique_atm.Guichet
+com/julien/guichet_automatique_atm/GuichetActivity.java
+ com.julien.guichet_automatique_atm.GuichetActivity
 com/julien/guichet_automatique_atm/MainActivity.java
  com.julien.guichet_automatique_atm.MainActivity
-com/julien/guichet_automatique_atm/Cheque.java
- com.julien.guichet_automatique_atm.Cheque

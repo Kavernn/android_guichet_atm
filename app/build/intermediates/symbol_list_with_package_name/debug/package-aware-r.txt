@@ -1778,12 +1778,7 @@ id btnOK
 id btnPaiementInteret
 id btnQuitter
 id button
-id button10
-id button11
-id button12
-id button13
-id button14
-id button15
+id button0
 id button2
 id button3
 id button4
@@ -1792,7 +1787,12 @@ id button6
 id button7
 id button8
 id button9
+id buttonC
+id buttonDeconnexion
+id buttonEtatCompte
 id buttonPanel
+id buttonPoint
+id buttonSoumettre
 id cache_measures
 id cancel_button
 id center

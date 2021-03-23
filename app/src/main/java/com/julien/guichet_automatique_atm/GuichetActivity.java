@@ -48,9 +48,9 @@ public class GuichetActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(SavedInstanceState);
-        savedInstanceState.putFloat(cleMontant, le_montant);
-        savedInstanceState.putInt(cleTransaction, sel_transaction);
-        savedInstanceState.putInt(cleCompte, sel_compte);
+           savedInstanceState.putFloat(cleMontant, le_montant);
+          savedInstanceState.putInt(cleTransaction, sel_transaction);
+          savedInstanceState.putInt(cleCompte, sel_compte);
     }
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {

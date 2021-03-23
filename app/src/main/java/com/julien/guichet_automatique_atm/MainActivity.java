@@ -40,14 +40,15 @@ public class MainActivity extends AppCompatActivity {
         String le_mdp = mdp.getText().toString();
 
         // Si le mot de passe ou le nom d'utilisateur sont des chaines vides, alors on affiche un message d'erreur.
-        if ((le_mdp.equals("")) || (le_nom.equals(""))) {
+        if (le_mdp.equals("") || (le_nom.equals(""))) {
+
 
             Toast.makeText(this, "Vous devez rentrer un nom d'utilisateur et mot de passe", 2).show();
         }
 
         //Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
        // Sinon on demande à l'utilisateur de rentrer les bonnes informations.
-        if ((le_mdp.equals("admin")) && (le_nom.equals("admin"))) {
+       else if ((le_mdp.equals("admin")) && (le_nom.equals("admin"))) {
             Intent intent = new Intent(this, GuichetActivity.class);
             startActivity(intent);
         }

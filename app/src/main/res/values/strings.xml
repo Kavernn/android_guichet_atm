@@ -22,4 +22,6 @@
     <string name="virement">Virement</string>
     <string name="_8">8</string>
     <string name="_9">9</string>
+    <string name="nom">Nom: </string>
+    <string name="prenom">Prénom: </string>
 </resources>
