@@ -15,62 +15,51 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class GuichetActivity extends AppCompatActivity {
 
-
-    /*RadioGroup rdgTransaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
-    RadioGroup rdgCompte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
-   RadioButton rbTransaction;
-   RadioButton rbCompte;
-
-   int id_btnCompte;
-   int id_btnTransaction;*/
-
+    static String cleMontant = "Montant";
+    static String cleTransaction = "Transaction";
+   static  String cleCompte = "Compte";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guichet);
+    }
 
-        // Initialisation des clés
-        String cleMontant = "Montant";
-        String cleTransaction = "Transaction";
-        String cleCompte = "Transaction";
-        RadioButton rbTransaction;
-        RadioButton rbCompte;
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
 
         RadioGroup rdgTransaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
-       RadioGroup rdgCompte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+        RadioGroup rdgCompte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+
+        //Récupérer le radioBouton Transaction et le mettre dans le Bundle
+        int id_btnTransaction = rdgTransaction.getCheckedRadioButtonId();
+        savedInstanceState.putInt(cleTransaction, id_btnTransaction);
+
+        //Récupérer le radioBouton compte et le mettre dans le Bundle
+        int id_btnCompte = rdgCompte.getCheckedRadioButtonId();
+        savedInstanceState.putInt(cleCompte, id_btnCompte);
 
 
-        ///Détecter le Choix de la transaction
-        rdgTransaction.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton rbTransaction = (RadioButton) group.findViewById(checkedId);
-                int id_btnTransaction = rbTransaction.getId();
-                savedInstanceState.putInt(cleTransaction, id_btnTransaction);
-            }
-        });
-
-        //Détecter le choix du compte
-        rdgCompte.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton rbCompte = (RadioButton) group.findViewById(checkedId);
-                int id_btnCompte = rbCompte.getId();
-                savedInstanceState.putInt(cleCompte, id_btnCompte);
-            }
-        });
-
-        //Récupérerle montant de la transaction
+        //Récupérer le montant de la transaction
         EditText montant = (EditText) findViewById(R.id.etxtMontant);
         float le_montant = Float.parseFloat(montant.getText().toString());
         savedInstanceState.putFloat(cleMontant, le_montant);
 
+    }
 
 
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
         if (savedInstanceState != null) {
+
+            RadioGroup rdgTransaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
+            RadioGroup rdgCompte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+
             //Récupérer le montant et le mettre dans le EditTexte montant
-            le_montant = savedInstanceState.getFloat(cleMontant, 0);
+            EditText montant = (EditText) findViewById(R.id.etxtMontant);
+            float le_montant = savedInstanceState.getFloat(cleMontant, 0);
             montant.setText(String.valueOf(le_montant));
 
             //Conserver le radiobouton transaction qui est coché
@@ -187,7 +176,7 @@ public class GuichetActivity extends AppCompatActivity {
 
     }
 
-    /*// Lors d'un clique sur le bouton soumettre uen transaction
+    // Lors d'un clique sur le bouton soumettre uen transaction
     public void onClickSoumettre(View view) {
 
         EditText montant = (EditText) findViewById(R.id.etxtMontant);
@@ -208,19 +197,34 @@ public class GuichetActivity extends AppCompatActivity {
 
 
         switch (choix_transaction){
-
+// Julien
             case choix_depot :
                 if (choix_compte  == choix_epargne) {
+                    //aller récupérer le compte de la personne concerrnée
+
+
                     // Utiliser la méthode ajouterMontant() de la classe épargne
 
+
+
                 }else if (choix_compte ==choix_cheque)  {
+
+
+
                     // Utiliser la méthode ajouterMontant() de la classe chèque
+
+
+
+
+
                 } else {
                     Toast.makeText(this, "Aucun compte n'est selectionné", 2).show();
                 }
                 break;
 
 
+
+                // Hicham
             case choix_retrait :
                 if (choix_compte ==choix_epargne){
                     // Utiliser la méthode retirerMontant() de la classe épargne
@@ -254,7 +258,7 @@ public class GuichetActivity extends AppCompatActivity {
         }
 
 
-    }*/
+    }
 
 
 
