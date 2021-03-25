@@ -18,9 +18,14 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     public void onClickBtnComptesCheques(View view) {
+        Intent intent = new Intent (this, ListeComptesCheques.class);
+        startActivity(intent);
+
     }
 
     public void onClickBtnComptesEpargnes(View view) {
+        Intent intent = new Intent (AdminActivity.this, ListeComptesEpargnes.class);
+        startActivity(intent);
     }
 
     public void onClickListeClients(View view) {

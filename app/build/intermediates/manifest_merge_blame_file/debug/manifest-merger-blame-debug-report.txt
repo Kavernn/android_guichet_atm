@@ -30,7 +30,7 @@
 21        android:theme="@style/Theme.Guichet_automatique_ATM" >
 21-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:11:9-61
 22        <activity android:name="com.julien.guichet_automatique_atm.ListeComptesCheques" />
-22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-66
+22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-57
 22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:19-54
 23        <activity android:name="com.julien.guichet_automatique_atm.ListeClients" />
 23-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:13:9-50

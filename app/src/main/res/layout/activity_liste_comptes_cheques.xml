@@ -8,8 +8,10 @@
 
     tools:context=".ListeComptesCheques">
 
+
+
     <TextView
-        android:id="@+id/Clients"
+        android:id="@+id/comptesCheques"
         android:text="Liste des Comptes Chèques"
         android:gravity="center"
         android:layout_width="match_parent"
@@ -20,6 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listeComptesCheques" />
+
+
 
 
 </LinearLayout>

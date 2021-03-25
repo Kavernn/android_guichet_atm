@@ -7,9 +7,12 @@ package com.julien.guichet_automatique_atm;
  */
 public class Cheque extends Compte {
 
+
     public Cheque(int nip, String username, double soldeCpt) {
         super(nip, username, soldeCpt);
     }
+
+
 
     @Override
     public void depot(double amount) {

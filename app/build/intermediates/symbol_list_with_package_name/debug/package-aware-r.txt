@@ -1815,6 +1815,8 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id comptesCheques
+id comptesEpargnes
 id confirm_button
 id constraintLayout
 id constraintLayout2
@@ -1898,6 +1900,7 @@ id icon
 id icon_group
 id iconeClients
 id iconeComptesCheques
+id iconeComptesEpargnes
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1922,6 +1925,7 @@ id listMode
 id list_item
 id listeClients
 id listeComptesCheques
+id listeComptesEpargnes
 id masked
 id material_clock_display
 id material_clock_face
@@ -2125,7 +2129,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtNumeroComptesCheques
+id txtNumeroComptesEpargnes
 id txtSoldeCompte
+id txtSoldeCompteEpargnes
 id unchecked
 id uniform
 id unlabeled
@@ -2203,6 +2209,8 @@ layout activity_admin_activity
 layout activity_liste_clients
 layout activity_liste_comptes_cheques
 layout activity_liste_comptes_cheques_layout
+layout activity_liste_comptes_epargnes
+layout activity_liste_comptes_epargnes_layout
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2416,6 +2424,7 @@ string soumettre
 string status_bar_notification_info_overflow
 string txtNumeroComptesCheques
 string txtSoldeCompte
+string txtSoldeEpargnes
 string virement
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

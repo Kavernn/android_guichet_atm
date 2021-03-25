@@ -79,7 +79,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/pign
 	android:theme
 		ADDED from /Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:11:9-61
 activity#com.julien.guichet_automatique_atm.ListeComptesCheques
-ADDED from /Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-66
+ADDED from /Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-57
 	android:name
 		ADDED from /Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:19-54
 activity#com.julien.guichet_automatique_atm.ListeClients

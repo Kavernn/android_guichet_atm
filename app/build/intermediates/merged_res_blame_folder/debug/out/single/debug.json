@@ -12,16 +12,20 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_cheques_layout.xml"
     },
     {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_cheques.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_cheques.xml"
+    },
+    {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_epargnes.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_epargnes.xml"
+    },
+    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_cheques.xml.flat",
-        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_cheques.xml"
     },
     {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
@@ -64,6 +68,10 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_epargnes_layout.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_epargnes_layout.xml"
+    },
+    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -100,11 +108,11 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/guichet.xml"
     },
     {
-        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout-land_guichet.xml.flat",
-        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout-land/guichet.xml"
-    },
-    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icone_dollars.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xxxhdpi/icone_dollars.png"
+    },
+    {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout-land_guichet.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout-land/guichet.xml"
     }
 ]

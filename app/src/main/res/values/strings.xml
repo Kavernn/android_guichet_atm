@@ -26,4 +26,6 @@
     <string name="prenom">Prénom: </string>
     <string name="txtSoldeCompte"> Solde du compte:</string>
     <string name="txtNumeroComptesCheques">Numéro du compte: </string>
+    <string name="txtSoldeEpargnes"> Solde du compte:</string>
+
 </resources>
