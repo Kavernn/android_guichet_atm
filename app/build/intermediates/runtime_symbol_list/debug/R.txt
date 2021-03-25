@@ -2006,10 +2006,10 @@ int id progress_circular 0x7f08013f
 int id progress_horizontal 0x7f080140
 int id prénom 0x7f080141
 int id radio 0x7f080142
-int id radioButton4 0x7f080143
-int id radioButton5 0x7f080144
-int id ratio 0x7f080145
-int id rdbDepot 0x7f080146
+int id ratio 0x7f080143
+int id rdbCheque 0x7f080144
+int id rdbDepot 0x7f080145
+int id rdbEpargne 0x7f080146
 int id rdbRetrait 0x7f080147
 int id rdbVirement 0x7f080148
 int id rdgChoixAction 0x7f080149
@@ -2288,6 +2288,7 @@ int layout text_view_with_theme_line_height 0x7f0b0073
 int layout text_view_without_line_height 0x7f0b0074
 int mipmap ic_launcher 0x7f0c0000
 int mipmap ic_launcher_round 0x7f0c0001
+int mipmap icone_dollars 0x7f0c0002
 int plurals mtrl_badge_content_description 0x7f0d0000
 int string _0 0x7f0e0000
 int string _1 0x7f0e0001

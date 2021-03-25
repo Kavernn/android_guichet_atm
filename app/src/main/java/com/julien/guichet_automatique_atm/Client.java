@@ -30,7 +30,8 @@ public class Client {
         this.user_type = user_type;
         if(this.user_type.toUpperCase().equals("ADMIN")){
 
-            this.username = username + "_ADMIN";
+            //this.username = username + "_ADMIN";
+            this.username = username;
             this.name = null;
             this.prenom = null;
             this.numeroNIP = 12345;

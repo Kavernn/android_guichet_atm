@@ -12,7 +12,7 @@ public class Cheque extends Compte {
     }
 
     @Override
-    public void depot(double amount){
+    public void depot(double amount) {
 
         this.setSoldeCompte(this.getSoldeCompte() + amount);
 
@@ -20,14 +20,14 @@ public class Cheque extends Compte {
 
 
     @Override
-    public void retrait(double amount){
+    public void retrait(double amount) {
 
         this.setSoldeCompte(this.getSoldeCompte() - amount);
 
     }
 
     @Override
-    public String toString(){
+    public String toString() {
 
 
         String affichage = super.toString();
@@ -35,3 +35,4 @@ public class Cheque extends Compte {
         return affichage;
 
     }
+}

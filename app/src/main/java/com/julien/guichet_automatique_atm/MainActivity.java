@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    final String extra_nip = "extra_nip";
-    final String extra_utilisateur = "extra_utilisateur";
+   // final String extra_nip = "extra_nip";
+   // final String extra_utilisateur = "extra_utilisateur";
 
     static int increment =  0;
 
@@ -39,25 +39,26 @@ public class MainActivity extends AppCompatActivity {
         // Initialiser la vue contenant le mot de passe et récupérer le nom d'utilisateur
         EditText mdp = (EditText) findViewById(R.id.etxtMdp);
         String le_mdp = mdp.getText().toString();
-        int nip = Integer.parseInt(le_mdp);
+        //int nip = Integer.parseInt(le_mdp);
 
 
-//=============================================================================================VERSION AVEC ADMIN UNIQUE
-        /*//Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
+//==========================================================================================VERSION AVEC ADMIN UNIQUE
+        //Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
         // Sinon on demande à l'utilisateur de rentrer les bonnes informations.
 
-        if ((le_mdp.equals("admin")) && (le_nom.equals("admin"))) {
-            Intent intent = new Intent(this, GuichetActivity.class);
+        if ((le_mdp.equals("admin")) && (utilisateur.equals("admin"))) {
+            Intent intent = new Intent(this, AdminActivity.class);
             startActivity(intent);
         }
         else {
             Toast.makeText(this, "Vous devez rentrer un nom d'utilisateur et un mot de passe corrects", 2).show();
-        }*/
+        }
 
 //=============================================================================================
         //Connection d'un client de Guichet 1 -
 
-        Guichet Guichet1;
+        /*
+       Guichet Guichet1;
         Client le_client;
 
 
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             else {
             Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
         }
-
+*/
 
 //=============================================================================================
                 //On incrémente le compteur statique

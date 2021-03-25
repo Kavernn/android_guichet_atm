@@ -12,6 +12,9 @@ public class Guichet {
     private ArrayList <Compte> compteCheques;
     private ArrayList <Compte> compteEpargnes;
 
+
+
+
     public Guichet() {
         this.clients = new ArrayList <Client>();
         this.compteCheques = new ArrayList <Compte>();

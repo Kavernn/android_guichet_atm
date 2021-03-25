@@ -37,13 +37,15 @@ public class ClientsAdapter extends ArrayAdapter<Client>{
             final Client clients = listeClientsList.get(position);
 
         if (clients !=null) {
-            final TextView nom = (TextView) view.findViewById(R.id.nom);
-            final TextView prenom = (TextView) view.findViewById(R.id.prénom);
+            TextView nom = (TextView) view.findViewById(R.id.nom);
+            TextView prenom = (TextView) view.findViewById(R.id.prénom);
 
-            String clientNom = res.getString(R.string.nom) + " " + clients.getNom();
+            //TODO Problème ici avec la récupération des infos
+
+            String clientNom = res.getString(R.string.nom) + " " + clients.getUsername();
             nom.setText(clientNom);
 
-            String clientPrenom = res.getString(R.string.prenom) + " " + clients.getPrenom();
+            String clientPrenom = res.getString(R.string.prenom) + " " + clients.getUser_type();
             prenom.setText(clientPrenom);
         }
         return view;

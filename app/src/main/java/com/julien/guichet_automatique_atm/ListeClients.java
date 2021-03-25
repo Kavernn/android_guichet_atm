@@ -26,11 +26,15 @@ public class ListeClients extends AppCompatActivity {
 
     private void initList(ArrayList<Client> listeClients) {
 
+        //initialisation de ce qui va peupler ACTIVITE_LISTE_CLIENTS.xml
+
         Client julien = new Client("Vogler", "Julien" );
         Client hicham = new Client("Sijlamassi", "Hicham");
         Client vincent = new Client ("Pinard", "Vincent");
+        Client mathieu = new Client ("Bélanger", "Mathieu");
         listeClients.add(julien);
         listeClients.add(hicham);
         listeClients.add(vincent);
+        listeClients.add(mathieu);
     }
 }
