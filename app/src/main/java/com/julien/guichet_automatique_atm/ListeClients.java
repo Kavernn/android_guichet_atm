@@ -28,13 +28,13 @@ public class ListeClients extends AppCompatActivity {
 
         //initialisation de ce qui va peupler ACTIVITE_LISTE_CLIENTS.xml
 
-        Client julien = new Client("Vogler", "Julien" );
-        Client hicham = new Client("Sijlamassi", "Hicham");
-        Client vincent = new Client ("Pinard", "Vincent");
-        Client mathieu = new Client ("Bélanger", "Mathieu");
+        Client julien = new Client("Vogler", "Julien", "juvog", 12345);
+        Client hicham = new Client("Sijlamassi", "Hicham", "hisijl", 56789);
+        Client vincent = new Client ("Pinard", "Vincent", "vipin", 54321);
+
         listeClients.add(julien);
         listeClients.add(hicham);
         listeClients.add(vincent);
-        listeClients.add(mathieu);
+
     }
 }
