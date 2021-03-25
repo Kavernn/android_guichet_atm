@@ -251,7 +251,8 @@
                 android:id="@+id/rdbDepot"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="@string/d_p_t" />
+                android:text="@string/d_p_t"
+                android:checked = "true"/>
 
             <RadioButton
                 android:id="@+id/rdbRetrait"
@@ -272,7 +273,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="36dp"
-            android:checkedButton="@id/radioButton4"
+            android:checkedButton="@id/rdbCheque"
             android:onClick="onClickChoixCompte"
             app:layout_constraintBottom_toBottomOf="@+id/rdgChoixAction"
             app:layout_constraintEnd_toEndOf="parent"
@@ -280,13 +281,14 @@
             app:layout_constraintVertical_bias="1.0">
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/rdbCheque"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="@string/ch_que" />
+                android:text="@string/ch_que"
+                android:checked = "true"/>
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/rdbEpargne"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:text="@string/pargne" />

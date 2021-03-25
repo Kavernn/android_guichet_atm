@@ -2,11 +2,13 @@ package com.julien.guichet_automatique_atm;
 
 import java.util.ArrayList;
 
-/*
-
+/**
+ *
+ * @author user
+ */
 public class Guichet {
 
-    private ArrayList<Client> clients;
+    private ArrayList <Client> clients;
     private ArrayList <Compte> compteCheques;
     private ArrayList <Compte> compteEpargnes;
 
@@ -73,9 +75,9 @@ public class Guichet {
     public void addCompteCheque(Client un_client){
 
 
-        if(this.validerUtilisateur(un_client.getNip(), un_client.getUsername())){
+        if(this.validerUtilisateur(un_client.getNumeroNIP(), un_client.getUsername())){
 
-            Compte compteCheque = new Cheque (un_client.getNip(), un_client.getUsername(), 0);
+            Compte compteCheque = new Cheque (un_client.getNumeroNIP(), un_client.getUsername(), 0);
             compteCheques.add(compteCheque);
         }
 
@@ -127,7 +129,9 @@ public class Guichet {
 
         for (Client c: clients){
 
-            if (c.getUsername().equals(username) && c.getNumeroNIP() == nip){
+            if ((c.getUsername().equals(username) && c.getNumeroNIP() == nip) &&
+            !(c.getUser_type().equals("ADMIN")))
+            {
 
                 return true;
 
@@ -139,6 +143,33 @@ public class Guichet {
         return isClient;
 
     }
+
+
+    // Méthode Valider Admin
+
+    public boolean validerAdmin(int nip, String username){
+
+
+        boolean isClient = false;
+
+        for (Client c: clients){
+
+            if ((c.getUsername().equals(username) && c.getNumeroNIP() == nip)
+                && (c.getUser_type().equals("ADMIN"))){
+                return true;
+            }
+        }
+
+        //System.out.println(" La combinaison nom utilisateur / NIP n'existe pas");
+        return isClient;
+
+    }
+
+
+
+
+
+
 
 
 
@@ -369,4 +400,3 @@ public class Guichet {
 
 
 }
-*/

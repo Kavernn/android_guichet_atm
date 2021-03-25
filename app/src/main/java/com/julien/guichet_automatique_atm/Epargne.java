@@ -1,5 +1,6 @@
 package com.julien.guichet_automatique_atm;
 
+
 public class Epargne extends Compte {
 
     private static double TAUXINTERET = 0.0125;
