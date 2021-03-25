@@ -9,7 +9,8 @@
         import android.widget.EditText;
         import android.widget.Toast;
 
-        //essai
+
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -45,17 +46,52 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Vous devez rentrer un nom d'utilisateur et mot de passe", 2).show();
         }
 
-        //Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
-       // Sinon on demande à l'utilisateur de rentrer les bonnes informations.
+
+//=============================================================================================VERSION AVEC ADMIN UNIQUE
+        /*//Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
+        // Sinon on demande à l'utilisateur de rentrer les bonnes informations.
+
         if ((le_mdp.equals("admin")) && (le_nom.equals("admin"))) {
             Intent intent = new Intent(this, GuichetActivity.class);
             startActivity(intent);
         }
         else {
             Toast.makeText(this, "Vous devez rentrer un nom d'utilisateur et un mot de passe corrects", 2).show();
+        }*/
+
+//=============================================================================================
+        //Connection d'un client de Guichet 1 -
+
+        Guichet Guichet1;
+        Client le_client;
+
+            if (Guichet1.validerUtilisateur(Integer.parseInt(le_mdp),le_nom )){
+            le_client = Guichet1.trouverClient(Integer.parseInt(le_mdp),le_nom );
+
+            // Redirection vers l'activité Guichet
+            Intent intent = new Intent(this, GuichetActivity.class);
+            startActivity(intent);
+            }
+            else {
+                Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
+                }
+
+        // Connection d'un administrateur de Guichet 1 :
+
+        if (Guichet1.validerAdmin(Integer.parseInt(le_mdp),le_nom )) {
+            le_client = Guichet1.trouverClient(Integer.parseInt(le_mdp),le_nom);
+
+            //Redirection vers l'activité Admin
+            Intent intent = new Intent(this, AdminActivity.class);
+            startActivity(intent);
+        }
+            else {
+            Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
         }
 
-        //On incrémente le compteur statique
+
+//=============================================================================================
+                //On incrémente le compteur statique
         increment = increment +1;
 
 
