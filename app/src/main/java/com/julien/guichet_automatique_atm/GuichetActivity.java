@@ -1,5 +1,6 @@
 package com.julien.guichet_automatique_atm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,10 +20,13 @@ public class GuichetActivity extends AppCompatActivity {
     static String cleTransaction = "Transaction";
    static  String cleCompte = "Compte";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guichet);
+
     }
 
     @Override
@@ -179,28 +183,40 @@ public class GuichetActivity extends AppCompatActivity {
     // Lors d'un clique sur le bouton soumettre uen transaction
     public void onClickSoumettre(View view) {
 
+        //Récupérer le nip et le nom d'utilisateur de la personne connectée
+        Intent intent = getIntent();
+        String utilisateur = intent.getStringExtra(MainActivity.extra_utilisateur);
+        int nip = intent.getIntExtra(MainActivity.extra_nip, 0);
+
+        Client le_client = guichet1.trouverClient(nip, utilisateur);
+
+        // Récupérer le montant écrit par l'utilisateur
         EditText montant = (EditText) findViewById(R.id.etxtMontant);
         double le_montant = Double.parseDouble(montant.getText().toString());
 
+        //Récupérer l'id du bouton transaction sélectionné par l'utilisateur
         RadioGroup transaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
         int choix_transaction = transaction.getCheckedRadioButtonId();
+
+
+        // Récupérer l'id du bouton "compte" sélectionné par l'utilisateur
+        RadioGroup compte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+        int choix_compte = compte.getCheckedRadioButtonId();
+
+        // Liste des id des boutons
+        final int choix_epargne = R.id.rdbEpargne;
+        final int choix_cheque = R.id.rdbCheque;
 
         final int choix_depot = R.id.rdbDepot;
         final int choix_retrait = R.id.rdbRetrait;
         final int choix_virement = R.id.rdbVirement;
-
-        RadioGroup compte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
-        int choix_compte = compte.getCheckedRadioButtonId();
-
-        int choix_epargne = R.id.rdbEpargne;
-        int choix_cheque = R.id.rdbCheque;
 
 
         switch (choix_transaction){
 // Julien
             case choix_depot :
                 if (choix_compte  == choix_epargne) {
-                    //aller récupérer le compte de la personne concerrnée
+
 
 
                     // Utiliser la méthode ajouterMontant() de la classe épargne
