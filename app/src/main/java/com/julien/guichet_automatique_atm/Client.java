@@ -1,6 +1,6 @@
 package com.julien.guichet_automatique_atm;
 
-package guichetautomatique;
+
 
 /**
  *
@@ -69,6 +69,13 @@ public class Client {
 
     public String getUsername() {
         return username;
+    }
+
+    // Ajout de getUserType()
+
+
+    public String getUser_type() {
+        return user_type;
     }
 
     public void setUsername(String username) {
