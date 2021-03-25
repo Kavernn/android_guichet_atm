@@ -143,6 +143,33 @@ public class Guichet {
     }
 
 
+    // Méthode Valider Admin
+
+    public boolean validerAdmin(int nip, String username){
+
+
+        boolean isClient = false;
+
+        for (Client c: clients){
+
+            if ((c.getUsername().equals(username) && c.getNumeroNIP() == nip)
+                && (c.getUser_type().equals("ADMIN"))){
+                return true;
+            }
+        }
+
+        //System.out.println(" La combinaison nom utilisateur / NIP n'existe pas");
+        return isClient;
+
+    }
+
+
+
+
+
+
+
+
 
     public double retraitCheque(int nip, String username, double montant){
 
