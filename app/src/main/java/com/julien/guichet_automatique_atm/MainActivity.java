@@ -13,14 +13,16 @@
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String extra_nip = "extra_nip";
+    public static final String extra_utilisateur = "extra_utilisateur";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    final String extra_nip = "extra_nip";
-    final String extra_utilisateur = "extra_utilisateur";
+
 
     static int increment =  0;
 
@@ -57,19 +59,18 @@ public class MainActivity extends AppCompatActivity {
 //=============================================================================================
         //Connection d'un client de Guichet 1 -
 
-        Guichet Guichet1;
-        Client le_client;
 
+        Guichet guichet1;
 
-            if (Guichet1.validerUtilisateur(nip,utilisateur )){
+            if (guichet1.validerUtilisateur(nip,utilisateur )){
            // Pas besoin. le_client = Guichet1.trouverClient(nip,utilisateur  );
 
             // Redirection vers l'activité Guichet
-            Intent intent = new Intent(this, GuichetActivity.class);
-            startActivity(intent);
+            Intent intent_guichet = new Intent(this, GuichetActivity.class);
+            startActivity(intent_guichet);
             // Faire passer nip et utilisateur dans l'intention
-            intent.putExtra(extra_nip, nip);
-            intent.putExtra(extra_utilisateur, utilisateur);
+            intent_guichet.putExtra(extra_nip, nip);
+            intent_guichet.putExtra(extra_utilisateur, utilisateur);
             }
             else {
                 Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
@@ -77,15 +78,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Connection d'un administrateur de Guichet 1 :
 
-        if (Guichet1.validerAdmin(nip,utilisateur )) {
+        if (guichet1.validerAdmin(nip,utilisateur )) {
            // Pas besoin. le_client = Guichet1.trouverClient(nip,utilisateur );
 
             //Redirection vers l'activité Admin
-            Intent intent = new Intent(this, AdminActivity.class);
-            startActivity(intent);
+            Intent intent_admin = new Intent(this, AdminActivity.class);
+            startActivity(intent_admin);
             // Faire passer nip et utilisateur dans l'intention
-            intent.putExtra(extra_nip, nip);
-            intent.putExtra(extra_utilisateur, utilisateur);
+            intent_admin.putExtra(extra_nip, nip);
+            intent_admin.putExtra(extra_utilisateur, utilisateur);
         }
             else {
             Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
