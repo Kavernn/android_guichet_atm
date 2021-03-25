@@ -11,7 +11,7 @@
 9-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:5:5-21:19
+11-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:5:5-23:19
 12        android:allowBackup="true"
 12-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,26 +29,32 @@
 20        android:testOnly="true"
 21        android:theme="@style/Theme.Guichet_automatique_ATM" >
 21-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:11:9-61
-22        <activity android:name="com.julien.guichet_automatique_atm.AdminActivity" />
-22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-60
-22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:19-48
-23        <activity android:name="com.julien.guichet_automatique_atm.MainActivity" >
-23-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:13:9-19:20
+22        <activity android:name="com.julien.guichet_automatique_atm.ListeComptesCheques" />
+22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:9-66
+22-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:12:19-54
+23        <activity android:name="com.julien.guichet_automatique_atm.ListeClients" />
+23-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:13:9-50
 23-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:13:19-47
-24            <intent-filter>
-24-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:14:13-18:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:15:17-69
-25-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:17:17-77
-27-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:17:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.julien.guichet_automatique_atm.GuichetActivity" />
-30-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:20:9-53
-30-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:20:19-50
-31    </application>
-32
-33</manifest>
+24        <activity android:name="com.julien.guichet_automatique_atm.AdminActivity" />
+24-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:14:9-51
+24-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:14:19-48
+25        <activity android:name="com.julien.guichet_automatique_atm.MainActivity" >
+25-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:15:9-21:20
+25-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:15:19-47
+26            <intent-filter>
+26-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:17:17-69
+27-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:19:17-77
+29-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.julien.guichet_automatique_atm.GuichetActivity" />
+32-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:22:9-53
+32-->/Users/pignon/AndroidStudioProjects/ATM/app/src/main/AndroidManifest.xml:22:19-50
+33    </application>
+34
+35</manifest>

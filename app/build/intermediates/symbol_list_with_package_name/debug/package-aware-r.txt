@@ -1688,6 +1688,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Clients
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1895,6 +1896,8 @@ id homeAsUp
 id honorRequest
 id icon
 id icon_group
+id iconeClients
+id iconeComptesCheques
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1917,6 +1920,8 @@ id line3
 id linear
 id listMode
 id list_item
+id listeClients
+id listeComptesCheques
 id masked
 id material_clock_display
 id material_clock_face
@@ -1974,6 +1979,7 @@ id multiply
 id navigation_header_container
 id never
 id noScroll
+id nom
 id none
 id normal
 id notification_background
@@ -1999,6 +2005,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id prénom
 id radio
 id radioButton4
 id radioButton5
@@ -2117,6 +2124,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtNumeroComptesCheques
+id txtSoldeCompte
 id unchecked
 id uniform
 id unlabeled
@@ -2189,7 +2198,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activite_liste_clients_layout
 layout activity_admin_activity
+layout activity_liste_clients
+layout activity_liste_comptes_cheques
+layout activity_liste_comptes_cheques_layout
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2387,6 +2400,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string nom
 string pargne
 string password_toggle_content_description
 string path_password_eye
@@ -2394,10 +2408,13 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string point
+string prenom
 string retrait
 string search_menu_title
 string soumettre
 string status_bar_notification_info_overflow
+string txtNumeroComptesCheques
+string txtSoldeCompte
 string virement
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

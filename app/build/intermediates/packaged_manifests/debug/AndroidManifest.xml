@@ -19,6 +19,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Guichet_automatique_ATM" >
+        <activity android:name="com.julien.guichet_automatique_atm.ListeComptesCheques" />
+        <activity android:name="com.julien.guichet_automatique_atm.ListeClients" />
         <activity android:name="com.julien.guichet_automatique_atm.AdminActivity" />
         <activity android:name="com.julien.guichet_automatique_atm.MainActivity" >
             <intent-filter>

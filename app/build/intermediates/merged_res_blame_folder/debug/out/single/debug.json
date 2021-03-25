@@ -4,12 +4,20 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activite_liste_clients_layout.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activite_liste_clients_layout.xml"
+    },
+    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_cheques_layout.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_cheques_layout.xml"
     },
     {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -20,8 +28,16 @@
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_comptes_cheques.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_comptes_cheques.xml"
+    },
+    {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/layout_activity_liste_clients.xml.flat",
+        "source": "/Users/pignon/AndroidStudioProjects/ATM/app/src/main/res/layout/activity_liste_clients.xml"
     },
     {
         "merged": "/Users/pignon/AndroidStudioProjects/ATM/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",

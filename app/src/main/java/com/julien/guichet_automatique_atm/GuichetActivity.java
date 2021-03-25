@@ -45,23 +45,23 @@ public class GuichetActivity extends AppCompatActivity {
 
     private Bundle SavedInstanceState;
 
-    @Override
-    protected void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(SavedInstanceState);
-           savedInstanceState.putFloat(cleMontant, le_montant);
-          savedInstanceState.putInt(cleTransaction, sel_transaction);
-          savedInstanceState.putInt(cleCompte, sel_compte);
-    }
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        if (savedInstanceState != null) {
-            le_montant = savedInstanceState.getFloat(cleMontant, le_montant);
-            sel_transaction = savedInstanceState.getInt(cleTransaction, sel_transaction);
-            sel_compte = savedInstanceState.getInt(cleTransaction, sel_compte);
-        }
+    //@Override
+    //protected void onSaveInstanceState(Bundle savedInstanceState) {
+       // super.onSaveInstanceState(SavedInstanceState);
+         //  savedInstanceState.putFloat(cleMontant, le_montant);
+         // savedInstanceState.putInt(cleTransaction, sel_transaction);
+         // savedInstanceState.putInt(cleCompte, sel_compte);
+   // }
+   // @Override
+  //  protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+      //  super.onRestoreInstanceState(savedInstanceState);
+      //  if (savedInstanceState != null) {
+         //   le_montant = savedInstanceState.getFloat(cleMontant, le_montant);
+         ///   sel_transaction = savedInstanceState.getInt(cleTransaction, sel_transaction);
+          //  sel_compte = savedInstanceState.getInt(cleTransaction, sel_compte);
+      //  }
 
-    }
+  //  }
 
 
 
