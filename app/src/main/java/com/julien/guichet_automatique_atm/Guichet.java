@@ -129,7 +129,9 @@ public class Guichet {
 
         for (Client c: clients){
 
-            if (c.getUsername().equals(username) && c.getNumeroNIP() == nip){
+            if ((c.getUsername().equals(username) && c.getNumeroNIP() == nip) &&
+            !(c.getUser_type().equals("ADMIN")))
+            {
 
                 return true;
 
