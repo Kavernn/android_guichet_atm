@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Guichet_automatique_ATM">
         <activity android:name=".ListeComptesCheques" />
+        <activity android:name=".ListeComptesEpargnes"/>
         <activity android:name=".ListeClients" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".MainActivity">

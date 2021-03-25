@@ -23,14 +23,19 @@ public class AdminActivity extends AppCompatActivity {
 
     }
 
-    public void onClickBtnComptesEpargnes(View view) {
-        Intent intent = new Intent (AdminActivity.this, ListeComptesEpargnes.class);
+    /*public void onClickBtnComptesEpargnes(View view) {
+        Intent intent = new Intent (this, ListeComptesEpargnes.class);
         startActivity(intent);
-    }
+    }*/
 
     public void onClickListeClients(View view) {
 
         Intent intent = new Intent (this, ListeClients.class);
+        startActivity(intent);
+    }
+
+    public void onClickBtnComptesEpargnes(View view) {
+        Intent intent = new Intent (this, ListeComptesEpargnes.class);
         startActivity(intent);
     }
 }
