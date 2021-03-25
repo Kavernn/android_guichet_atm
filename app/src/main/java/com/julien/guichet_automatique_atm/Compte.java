@@ -7,6 +7,9 @@ package com.julien.guichet_automatique_atm;
 
 //
 abstract public class Compte {
+// Il faudrait redéfinir l'attribut username en tant qu'objet CLient
+    // ALors de la connexion on récupére l'objet Client qu'il faut ensuite manipuler pour aller faire des opérations dans les diffférents comptes.
+
 
     private int numeroNIP;
     private String username;
