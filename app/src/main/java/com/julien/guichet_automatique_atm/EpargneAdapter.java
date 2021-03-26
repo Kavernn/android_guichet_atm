@@ -42,7 +42,7 @@ public class EpargneAdapter extends ArrayAdapter<Epargne> {
 
 
 
-            String epargneSolde = res.getString(R.string.txtSoldeCompte) + " " + epargne.getSoldeCompte();
+            String epargneSolde = res.getString(R.string.txtSoldeCompte) + " " + epargne.getSoldeCompte() + "$";
             solde.setText(epargneSolde);
 
             String noEpargne= res.getString(R.string.txtNumeroComptesCheques) + " " + epargne.getNumeroCompte();

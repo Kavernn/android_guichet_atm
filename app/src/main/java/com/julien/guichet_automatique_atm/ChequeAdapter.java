@@ -42,7 +42,7 @@ public class ChequeAdapter extends ArrayAdapter<Cheque> {
 
 
 
-                String chequeSolde = res.getString(R.string.txtSoldeCompte) + " " + cheques.getSoldeCompte();
+                String chequeSolde = res.getString(R.string.txtSoldeCompte) + " " + cheques.getSoldeCompte() + "$";
                 solde.setText(chequeSolde);
 
                 String noCheques= res.getString(R.string.txtNumeroComptesCheques) + " " + cheques.getNumeroCompte();

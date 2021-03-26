@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Guichet_automatique_ATM</string>
+    <string name="app_name">Guichet Automatique ATM</string>
     <string name="bonjour">Bonjour</string>
     <string name="d_connexion">dÉCONNEXION</string>
     <string name="etats_des_comptes">etats des comptes</string>
