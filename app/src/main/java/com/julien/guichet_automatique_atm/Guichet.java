@@ -1,5 +1,7 @@
 package com.julien.guichet_automatique_atm;
 
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 /**
@@ -178,8 +180,6 @@ public class Guichet {
 
     public double retraitCheque(int nip, String username, double montant){
 
-        if(this.validerUtilisateur(nip, username)){ // Verifie que utilisateur existe
-
             Compte compteCheque = trouverCompteCheque(nip, username);
 
             if (compteCheque != null){ // Verifie que compteCheque exsite dans compteCheques
@@ -195,19 +195,12 @@ public class Guichet {
                 else {
 
 
-                    System.out.println("Vous n'avez pas les fonds suffisants dans votre compte Cheque");
+                    return -1;
 
                 }
 
-
             }
 
-        }
-
-        else {
-
-
-        }
 
         return -1;
 
@@ -216,8 +209,6 @@ public class Guichet {
 
 
     public double retraitEpargne(int nip, String username, double montant){
-
-        if(this.validerUtilisateur(nip, username)){ // Verifie que utilisateur existe
 
             Compte compteEpargne = trouverCompteEpargne(nip, username);
 
@@ -228,35 +219,17 @@ public class Guichet {
                     compteEpargne.retrait(montant);
                     double solde = compteEpargne.getSoldeCompte();
                     return solde;
-
                 }
-
                 else {
 
-
-                    System.out.println("Vous n'avez pas les fonds suffisants dans votre compte Cheque");
-
+                    return -1;
                 }
-
-
             }
-
-        }
-
-        else {
-
-
-        }
-
-        return -1;
-
+            return -1;
     }
 
 
     public double depotCheque(int nip, String username, double montant){
-
-
-        if(validerUtilisateur(nip, username)){
 
             Compte cheque = trouverCompteCheque(nip, username);
 
@@ -265,21 +238,15 @@ public class Guichet {
                 cheque.depot(montant);
                 return cheque.getSoldeCompte();
             }
-        }
 
 
         return -1;
-
-
-
 
     }
 
 
     public double depotEpargne(int nip, String username, double montant){
 
-
-        if(validerUtilisateur(nip, username)){
 
             Compte epargne = trouverCompteEpargne(nip, username);
 
@@ -288,7 +255,6 @@ public class Guichet {
                 return epargne.getSoldeCompte();
             }
 
-        }
 
 
         return -1;

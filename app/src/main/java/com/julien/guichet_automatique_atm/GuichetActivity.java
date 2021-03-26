@@ -1,5 +1,6 @@
 package com.julien.guichet_automatique_atm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,16 +14,62 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class GuichetActivity extends AppCompatActivity {
+public class GuichetActivity  extends AppCompatActivity {
 
+    // Valeur des clés pour la restoration des paramètres OnSaveInstanceState() et OnRestoreInstanceState()
     static String cleMontant = "Montant";
     static String cleTransaction = "Transaction";
    static  String cleCompte = "Compte";
+
+    // Récipération des valeurs nip et utilisateur provenant de MainActivity
+    Intent intent = getIntent();
+    String utilisateur = intent.getStringExtra(MainActivity.extra_utilisateur);
+    int nip = intent.getIntExtra(MainActivity.extra_nip, 0);
+
+    // Création d'un objet Guichet et recherche des comptes  associés à l'utilisateur.
+    Guichet guichet = new Guichet();
+    Compte le_compte_cheque = guichet.trouverCompteCheque(nip, utilisateur);
+    Compte le_compte_epargne = guichet.trouverCompteEpargne(nip, utilisateur);
+
+    // Récupérer le montant écrit par l'utilisateur
+    EditText montant = (EditText) findViewById(R.id.etxtMontant);
+    double le_montant = Double.parseDouble(montant.getText().toString());
+
+    //Récupérer l'id du bouton transaction sélectionné par l'utilisateur
+    RadioGroup transaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
+    int choix_transaction = transaction.getCheckedRadioButtonId();
+
+    // Récupérer l'id du bouton "compte" sélectionné par l'utilisateur
+    RadioGroup compte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+    int choix_compte = compte.getCheckedRadioButtonId();
+
+    // Liste des id des boutons
+    final int choix_epargne = R.id.rdbEpargne;
+    final int choix_cheque = R.id.rdbCheque;
+
+    final int choix_depot = R.id.rdbDepot;
+    final int choix_retrait = R.id.rdbRetrait;
+    final int choix_virement = R.id.rdbVirement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guichet);
+
+        //Ajout des clients (Est ce nécessaire de le rajouter si c'est présent sur l'activité MainActivity ?)
+        guichet.addClient("Sijlamassi", "Hicham", "hichamsijlamassi", 12345);
+        guichet.addClient("Vogler", "Julien", "julienvogler", 12345);
+        guichet.addClient("Pinard", "Vincent", "pinardvincent", 12345);
+        guichet.addAdmin("Hicham", "admin");
+        //Ajout des comptes cheque
+        guichet.addCompteCheque("hichamsijlamassi", 12345);
+        guichet.addCompteCheque("julienvogler", 12345);
+        guichet.addCompteCheque("pinardvincent", 12345);
+
+        //Ajout des comptes Epargne
+        guichet.addCompteEpargne("hichamsijlamassi", 12345);
+        guichet.addCompteEpargne("julienvogler", 12345);
+        guichet.addCompteEpargne("pinardvincent", 12345);
     }
 
     @Override
@@ -45,7 +92,6 @@ public class GuichetActivity extends AppCompatActivity {
         EditText montant = (EditText) findViewById(R.id.etxtMontant);
         float le_montant = Float.parseFloat(montant.getText().toString());
         savedInstanceState.putFloat(cleMontant, le_montant);
-
     }
 
 
@@ -72,11 +118,10 @@ public class GuichetActivity extends AppCompatActivity {
 
 
     public void onClickBtnDeconnexion(View view) {
-
+        finish();
+        System.exit(0);
     }
 
-
-    // Méthodes onClick du pavé numérique
 
     public void onClickBtn1(View view) {
         EditText montant = (EditText) findViewById(R.id.etxtMontant);
@@ -152,116 +197,148 @@ public class GuichetActivity extends AppCompatActivity {
         montant.setText(montantTxt);
     }
 
-    //Méthodes onClick sur les radioGroup rdgChoixAction et rdgChoixCompte
 
-    public void onClickChoixAction(View view) {
-
-
-
+    //Méthodes onClick sur le radioGroup rdgChoixAction
+    RadioGroup rdgTransaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
+    RadioGroup rdgCompte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
+    public void onClickDepot(View view) {
+        rdgTransaction.check(R.id.rdbDepot);
     }
 
-
-
-    public void onClickChoixCompte(View view) {
-
-
+    public void onClickRetrait(View view) {
+        rdgTransaction.check(R.id.rdbRetrait);
     }
 
+    public void onClickVirement(View view) {
+        rdgTransaction.check(R.id.rdbVirement);
+    }
 
+    //Méthodes onClick sur le radioGroup rdgChoixCompte
 
-    // Méthodes onClick qui permettent de finaliser la transaction et de montrer l'état des comptes.
+    public void onClickCheque(View view) {
+        rdgCompte.check(R.id.rdbCheque);
+    }
+
+    public void onClickEpargne(View view) {
+        rdgCompte.check(R.id.rdbEpargne);
+    }
+
 
     public void onClickEtat(View view) {
 
+        Toast.makeText(this,  le_compte_cheque.toString() +  "\n"+ le_compte_epargne.toString(), 4).show();
 
     }
 
-    // Lors d'un clique sur le bouton soumettre uen transaction
+
     public void onClickSoumettre(View view) {
 
-        EditText montant = (EditText) findViewById(R.id.etxtMontant);
-        double le_montant = Double.parseDouble(montant.getText().toString());
 
-        RadioGroup transaction = (RadioGroup) findViewById(R.id.rdgChoixAction);
-        int choix_transaction = transaction.getCheckedRadioButtonId();
+        switch (choix_transaction) {
 
-        final int choix_depot = R.id.rdbDepot;
-        final int choix_retrait = R.id.rdbRetrait;
-        final int choix_virement = R.id.rdbVirement;
+            case choix_depot:
 
-        RadioGroup compte = (RadioGroup) findViewById(R.id.rdgChoixCompte);
-        int choix_compte = compte.getCheckedRadioButtonId();
+                if (choix_compte == choix_epargne) {
+                    // Le solde final du compte ne doit pas dépassé 100000$
+                    if ((le_compte_epargne.getSoldeCompte() + le_montant) > 100000){
+                        Toast.makeText(this, "Transaction refusée : le solde final du compte épargne dépasse la limite autorisée.", 2).show();
+                    }
+                    // Ajout du montant sur le compte épargne
+                    else {
+                        double nouveau_solde_epargne = le_compte_epargne.getSoldeCompte() + le_montant;
+                        le_compte_epargne.setSoldeCompte(nouveau_solde_epargne);
+                        Toast.makeText(this, "Nouveau solde du compte épargne : " + nouveau_solde_epargne + " $.", 2).show();
+                    }
+                } else if (choix_compte == choix_cheque) {
 
-        int choix_epargne = R.id.rdbEpargne;
-        int choix_cheque = R.id.rdbCheque;
-
-
-        switch (choix_transaction){
-// Julien
-            case choix_depot :
-                if (choix_compte  == choix_epargne) {
-                    //aller récupérer le compte de la personne concerrnée
-
-
-                    // Utiliser la méthode ajouterMontant() de la classe épargne
-
-
-
-                }else if (choix_compte ==choix_cheque)  {
-
-
-
-                    // Utiliser la méthode ajouterMontant() de la classe chèque
-
-
-
-
-
+                    // Le solde final du compte ne doit pas dépassé 100000$
+                    if ((le_compte_cheque.getSoldeCompte() + le_montant) > 100000){
+                        Toast.makeText(this, "Transaction refusée : le solde final du compte chèque dépasse la limite autorisée.", 2).show();
+                    }
+                    // Ajout du montant sur le compte chèque
+                    else {
+                        double nouveau_solde_cheque = le_compte_cheque.getSoldeCompte() + le_montant;
+                        le_compte_cheque.setSoldeCompte(nouveau_solde_cheque);
+                        Toast.makeText(this, "Nouveau solde su compte chèque : " + nouveau_solde_cheque + " $.", 2).show();
+                    }
                 } else {
-                    Toast.makeText(this, "Aucun compte n'est selectionné", 2).show();
+                    Toast.makeText(this, "Aucun type de transaction n'est selectionné", 2).show();
                 }
                 break;
 
 
+            case choix_retrait:
+                // On ne peut pas faire un retrait de plus de 1000$ et le montant doit être un multiple de 10$.
+                if ((le_montant >= 1000) || (le_montant%10 != 0)) {
+                    Toast.makeText(this, "Attention ! \n Retrait maximal autorisé : 1000$. \n Vous devez saisir un montant multiple de 10", 2).show();
 
-                // Hicham
-            case choix_retrait :
-                if (choix_compte ==choix_epargne){
-                    // Utiliser la méthode retirerMontant() de la classe épargne
+                    // Retrait du compte épargne
+                } else if (choix_compte == choix_epargne) {
+                    double solde_epargne = le_compte_epargne.getSoldeCompte();
+                    if (le_montant > solde_epargne){
+                        Toast.makeText(this, "Fonds insuffisants ", 2).show();
+                    }
+                    else {double nouveau_solde_epargne = guichet.retraitEpargne(nip, utilisateur, le_montant);
+                        Toast.makeText(this, "Nouveau solde du compte épargne : " + solde_epargne + " $.", 2).show();
+                    }
+
+                    // Retrait du compte chèque
+                } else if (choix_compte == choix_cheque) {
+                    double solde_cheque = le_compte_cheque.getSoldeCompte();
+                    if (le_montant > solde_cheque) {
+                        Toast.makeText(this, "Fonds insuffisants ", 2).show();
+                    } else {
+                        double nouveau_solde_cheque = guichet.retraitEpargne(nip, utilisateur, le_montant);
+                        Toast.makeText(this, "Nouveau solde du compte chèque : " + nouveau_solde_cheque + " $.", 2).show();
+                    }
                 }
-                else if (choix_compte ==choix_cheque) {
-                    // Utiliser la méthode retirerMontant() de la classe cheque
-                }
-                else {
-                    Toast.makeText(this, "Aucun compte n'est selectionné", 2).show();
-                };
                 break;
 
-            case choix_virement :
+            case choix_virement:
 
-                if (choix_compte ==choix_epargne){
-                    // Utiliser la méthode virerVersCheque() de la classe épargne
+                // On ne peut pas faire de virements de plus de 100000$
+                if (le_montant >= 100000) {
+                    Toast.makeText(this, "Vous n'êtes pas autorisés à faire une transaction de plus de 100000$", 2).show();
+
+                    // Virement de chèque vers épargne
+                } else if (choix_compte == choix_epargne) {
+
+                    // 1. Compte à débiter = compte cheque
+                    double solde_cheque = le_compte_cheque.getSoldeCompte();
+                    if (solde_cheque < le_montant) {
+                        Toast.makeText(this, "Vous n'avez pas le montant suffisant sur votre compte chèque", 2).show();
+                    } else {
+                        le_compte_cheque.retrait(le_montant);
+
+                        // 2. Compte à créditer : compte épargne
+                        le_compte_epargne.depot(le_montant);
+                        double nouveau_solde_cheque = le_compte_cheque.getSoldeCompte();
+                        double nouveau_solde_epargne = le_compte_epargne.getSoldeCompte();
+                        Toast.makeText(this, "Solde compte chèque : " + nouveau_solde_cheque + " $. \nSolde compte chèque : " + nouveau_solde_epargne + " $.", 2).show();
+                    }
+
+                    // Virement de épargne vers chèque
+                } else if (choix_compte == choix_cheque) {
+                    // 1. Compte à débiter = compte épargne
+                    double solde_epargne = le_compte_epargne.getSoldeCompte();
+                    if (solde_epargne < le_montant) {
+                        Toast.makeText(this, "Vous n'avez pas le montant suffisant sur votre compte épargne", 2).show();
+                    } else {
+                        le_compte_epargne.retrait(le_montant);
+
+                        // 2. Compte à créditer : compte chèque
+                        le_compte_cheque.depot(le_montant);
+                        double nouveau_solde_cheque = le_compte_cheque.getSoldeCompte();
+                        double nouveau_solde_epargne = le_compte_epargne.getSoldeCompte();
+                        Toast.makeText(this, "Solde compte chèque : " + nouveau_solde_cheque + " $. \nSolde compte chèque : " + nouveau_solde_epargne + " $.", 2).show();
+                    }
                 }
-                else if (choix_compte ==choix_cheque){
-                    // Utiliser la méthode virerVersEpargne() de la classe cheque
-                }
-                else {
-                    Toast.makeText(this, "Aucun compte n'est selectionné", 2).show();
 
-                };
-                break;
-
-            default :
-                Toast.makeText(this, "Aucun type de transaction n'est sélectionné", 2).show();
-                break;
 
         }
 
 
     }
-
-
-
 
 
 }

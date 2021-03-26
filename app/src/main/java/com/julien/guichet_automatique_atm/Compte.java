@@ -68,7 +68,8 @@ abstract public class Compte {
     public String toString(){
 
         String affichage = "Compte no: " + this.numeroCompte + " ******************** \n";
-        affichage += " Username: " + this.username;
+        // affichage += " Utilisateur : " + this.username; info redondante lors de l'affichage des infos des 2 comptes.
+
         return affichage;
 
     }
