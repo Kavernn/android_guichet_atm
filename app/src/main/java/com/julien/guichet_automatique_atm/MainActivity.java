@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickOK(View view) {
         // L'utilisateur n'a le droit qu'à trois essais :
         if (increment > 2) {
-            Toast.makeText(this, "Vous avez eu trois chances, c'est bien assez !", 2).show();
+            Toast.makeText(this, "Vous avez eu trois chances, c'est bien assez !", Toast.LENGTH_SHORT).show();
             finish();
             System.exit(0);
         }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             intent_admin.putExtra(extra_utilisateur, utilisateur);
         }
         else {
-            Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
+            Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", Toast.LENGTH_SHORT).show();
         }
 
         //Incrémentation du compteur
