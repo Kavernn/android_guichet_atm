@@ -21,15 +21,18 @@ public class GuichetActivity  extends AppCompatActivity {
     static String cleTransaction = "Transaction";
    static  String cleCompte = "Compte";
 
-    // Récipération des valeurs nip et utilisateur provenant de MainActivity
-    Intent intent = getIntent();
-    String utilisateur = intent.getStringExtra(MainActivity.extra_utilisateur);
-    int nip = intent.getIntExtra(MainActivity.extra_nip, 0);
 
     // Création d'un objet Guichet et recherche des comptes  associés à l'utilisateur.
     Guichet guichet = new Guichet();
+
+    // Récupération des valeurs nip et utilisateur provenant de MainActivity
+    Intent intent = getIntent();
+    String utilisateur = intent.getStringExtra(MainActivity.EXTRA_TEXT);
+    int nip = intent.getIntExtra(MainActivity.EXTRA_NUMBER, 0);
     Compte le_compte_cheque = guichet.trouverCompteCheque(nip, utilisateur);
     Compte le_compte_epargne = guichet.trouverCompteEpargne(nip, utilisateur);
+
+
 
     // Récupérer le montant écrit par l'utilisateur
     EditText montant = (EditText) findViewById(R.id.etxtMontant);
@@ -56,6 +59,7 @@ public class GuichetActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guichet);
 
+
         //Ajout des clients (Est ce nécessaire de le rajouter si c'est présent sur l'activité MainActivity ?)
         guichet.addClient("Sijlamassi", "Hicham", "hichamsijlamassi", 12345);
         guichet.addClient("Vogler", "Julien", "julienvogler", 12345);
@@ -70,7 +74,29 @@ public class GuichetActivity  extends AppCompatActivity {
         guichet.addCompteEpargne("hichamsijlamassi", 12345);
         guichet.addCompteEpargne("julienvogler", 12345);
         guichet.addCompteEpargne("pinardvincent", 12345);
+
+
+      /* // essai avec conseil stackoverflow
+       Intent intent = getIntent();
+        Bundle b = intent.getExtras();
+
+        if (b!= null) {
+            String utilisateur = intent.getStringExtra(MainActivity.extra_utilisateur);
+            int nip = intent.getIntExtra(MainActivity.extra_nip, 0);
+        }
+        Compte le_compte_cheque = guichet.trouverCompteCheque(nip, utilisateur);
+        Compte le_compte_epargne = guichet.trouverCompteEpargne(nip, utilisateur);*/
+
+        /*if (bundle != null){
+            nip = bundle.getInt(MainActivity.extra_nip);
+            utilisateur = bundle.getString(MainActivity.extra_utilisateur);
+        }*/
+
+
     }
+
+
+
 
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
