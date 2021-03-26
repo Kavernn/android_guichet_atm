@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String extra_nip = "extra_nip";
     public static final String extra_utilisateur = "extra_utilisateur";
-    Guichet guichet;
+    Guichet guichet = new Guichet();
+
     static int increment =  0;
 
     @Override
@@ -27,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         guichet.addClient("Vogler", "Julien", "julienvogler", 12345);
         guichet.addClient("Pinard", "Vincent", "pinardvincent", 12345);
         guichet.addAdmin("Hicham", "admin");
-    }
+
+
+
+
+        }
+
 
 
     public void onClickOK(View view) {
@@ -68,8 +74,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent_guichet = new Intent(this, GuichetActivity.class);
             startActivity(intent_guichet);
             // Faire passer nip et utilisateur dans GuichetActivity
-            intent_guichet.putExtra(extra_nip, nip);
-            intent_guichet.putExtra(extra_utilisateur, utilisateur);
+           // intent_guichet.putExtra(extra_utilisateur, utilisateur);
+           // intent_guichet.putExtra(extra_nip, nip);
+
             }
 
         // Connection d'un administrateur :
