@@ -251,19 +251,22 @@
                 android:id="@+id/rdbDepot"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="@string/d_p_t"
-                android:checked = "true"/>
+                android:checked="true"
+                android:onClick="onClickDepot"
+                android:text="@string/d_p_t" />
 
             <RadioButton
                 android:id="@+id/rdbRetrait"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
+                android:onClick="onClickRetrait"
                 android:text="@string/retrait" />
 
             <RadioButton
                 android:id="@+id/rdbVirement"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
+                android:onClick="onClickVirement"
                 android:text="@string/virement" />
         </RadioGroup>
 
@@ -284,13 +287,15 @@
                 android:id="@+id/rdbCheque"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="@string/ch_que"
-                android:checked = "true"/>
+                android:checked="true"
+                android:onClick="onClickCheque"
+                android:text="@string/ch_que" />
 
             <RadioButton
                 android:id="@+id/rdbEpargne"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:onClick="onClickEpargne"
                 android:text="@string/pargne" />
         </RadioGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
