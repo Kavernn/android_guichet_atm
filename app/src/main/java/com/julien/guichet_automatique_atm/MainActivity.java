@@ -13,13 +13,15 @@
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String extra_nip = "extra_nip";
-    public static final String extra_utilisateur = "extra_utilisateur";
-    Guichet guichet;
-    static int increment =  0;
+    public static final String EXTRA_NUMBER = "com.julien.guichet_automatique_atm.EXTRA_NUMBER";
+    public static final String EXTRA_TEXT = "com.julien.guichet_automatique_atm.EXTRA_TEXT";
+    Guichet guichet = new Guichet();
+    static int increment = 0;
+    private static final int REQUEST_CODE = 10;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickOK(View view) {
+
         // L'utilisateur n'a le droit qu'à trois essais :
         if (increment > 2) {
             Toast.makeText(this, "Vous avez eu trois chances, c'est bien assez !", 2).show();
@@ -52,11 +55,10 @@ public class MainActivity extends AppCompatActivity {
         //Si le nom d'utilisateur et le mot de passe sont "admin", alors on va sur l'activité conversion.class à l'aide d'une intention
         // Sinon on demande à l'utilisateur de rentrer les bonnes informations.
 
-       /* if ((le_mdp.equals("admin")) && (utilisateur.equals("admin"))) {
+        /*if ((le_mdp.equals("julienvogler")) && (utilisateur.equals("12345"))) {
             Intent intent = new Intent(this, GuichetActivity.class);
             startActivity(intent);
-        }
-        else {
+        } else {
             Toast.makeText(this, "Vous devez rentrer un nom d'utilisateur et un mot de passe corrects", 2).show();
         }*/
 
@@ -66,20 +68,22 @@ public class MainActivity extends AppCompatActivity {
         if (guichet.validerUtilisateur(nip,utilisateur )){
             // Redirection vers l'activité Guichet
             Intent intent_guichet = new Intent(this, GuichetActivity.class);
-            startActivity(intent_guichet);
+
             // Faire passer nip et utilisateur dans GuichetActivity
-            intent_guichet.putExtra(extra_nip, nip);
-            intent_guichet.putExtra(extra_utilisateur, utilisateur);
+            intent_guichet.putExtra(EXTRA_NUMBER, nip);
+            intent_guichet.putExtra(EXTRA_TEXT, utilisateur);
+            startActivity(intent_guichet);
             }
 
         // Connection d'un administrateur :
         else if (guichet.validerAdmin(nip,utilisateur )) {
             //Redirection vers l'activité Admin
             Intent intent_admin = new Intent(this, AdminActivity.class);
-            startActivity(intent_admin);
+
             // Faire passer nip et utilisateur dans l'intention
-            intent_admin.putExtra(extra_nip, nip);
-            intent_admin.putExtra(extra_utilisateur, utilisateur);
+            intent_admin.putExtra(EXTRA_NUMBER, nip);
+            intent_admin.putExtra(EXTRA_TEXT, utilisateur);
+            startActivity(intent_admin);
         }
         else {
             Toast.makeText(this, "Utilisateur ou mot de passe incorrect ", 2).show();
@@ -90,9 +94,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickQuitter(View view) {
-        finish();
-        System.exit(0);
-
+    /*//============================================code Udem
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
+            if (data.hasExtra("returnKey1")) {
+                if ((data.getExtras() != null) && (data.getExtras().getString("returnKey1") != null))
+                    Toast.makeText(this, data.getExtras().getString("returnKey1"),
+                            Toast.LENGTH_SHORT).show();
+            }
+        }
     }
-}
+
+    //===========================================code udem*/
+
+
+        public void onClickQuitter (View view){
+            finish();
+            System.exit(0);
+
+        }
+    }
