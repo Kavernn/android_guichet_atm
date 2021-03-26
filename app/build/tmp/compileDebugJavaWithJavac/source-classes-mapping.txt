@@ -14,19 +14,19 @@ com/julien/guichet_automatique_atm/Cheque.java
  com.julien.guichet_automatique_atm.Cheque
 com/julien/guichet_automatique_atm/GuichetActivity.java
  com.julien.guichet_automatique_atm.GuichetActivity
-com/julien/guichet_automatique_atm/ListeComptesCheques.java
- com.julien.guichet_automatique_atm.ListeComptesCheques
-com/julien/guichet_automatique_atm/Client.java
- com.julien.guichet_automatique_atm.Client
-com/julien/guichet_automatique_atm/ChequeAdapter.java
- com.julien.guichet_automatique_atm.ChequeAdapter
 com/julien/guichet_automatique_atm/ListeClients.java
  com.julien.guichet_automatique_atm.ListeClients
-com/julien/guichet_automatique_atm/ListeComptesEpargnes.java
- com.julien.guichet_automatique_atm.ListeComptesEpargnes
-com/julien/guichet_automatique_atm/EpargneAdapter.java
- com.julien.guichet_automatique_atm.EpargneAdapter
 com/julien/guichet_automatique_atm/AdminActivity.java
  com.julien.guichet_automatique_atm.AdminActivity
 com/julien/guichet_automatique_atm/MainActivity.java
  com.julien.guichet_automatique_atm.MainActivity
+com/julien/guichet_automatique_atm/Client.java
+ com.julien.guichet_automatique_atm.Client
+com/julien/guichet_automatique_atm/ListeComptesCheques.java
+ com.julien.guichet_automatique_atm.ListeComptesCheques
+com/julien/guichet_automatique_atm/ChequeAdapter.java
+ com.julien.guichet_automatique_atm.ChequeAdapter
+com/julien/guichet_automatique_atm/EpargneAdapter.java
+ com.julien.guichet_automatique_atm.EpargneAdapter
+com/julien/guichet_automatique_atm/ListeComptesEpargnes.java
+ com.julien.guichet_automatique_atm.ListeComptesEpargnes

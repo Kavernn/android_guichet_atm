@@ -2297,6 +2297,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icone_clients
 mipmap icone_dollars
 plurals mtrl_badge_content_description
 string _0
