@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent_guichet = new Intent(this, GuichetActivity.class);
             startActivity(intent_guichet);
             // Faire passer nip et utilisateur dans GuichetActivity
-           // intent_guichet.putExtra(extra_utilisateur, utilisateur);
-           // intent_guichet.putExtra(extra_nip, nip);
+            intent_guichet.putExtra(extra_utilisateur, utilisateur);
+            intent_guichet.putExtra(extra_nip, nip);
 
             }
 
